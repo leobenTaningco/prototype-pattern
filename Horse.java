@@ -2,11 +2,13 @@ class Horse implements Animal {
     private int legs;
     private String sound;
     private String food;
+    private String color;
 
     public Horse() {
         this.legs = 4; 
         this.sound = "Neigh";
         this.food = "Hay";
+        this.color = "Yellow";
     }
 
     public Animal clone() {
@@ -27,5 +29,9 @@ class Horse implements Animal {
 
     public void eat(){
         System.out.println("Eating " + food);
+    }
+
+    public String getColor(){
+        return color;
     }
 }
